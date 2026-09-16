@@ -1,0 +1,25 @@
+# ============================================
+# 轻量依赖(不安装 BGE / Milvus / MinIO / pypdf)
+# 适用于本地快速开发或不便拉取大模型的环境:
+#   pip install -r requirements-lite.txt
+# 此时自动降级为:哈希向量化 + 进程内知识检索 + 本地磁盘存储
+# 若要完整功能(BGE + Milvus + MinIO),请使用 requirements.txt
+# ============================================
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+sqlalchemy>=2.0.30
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+email-validator>=2.1.0
+python-jose[cryptography]>=3.3.0
+bcrypt>=4.0.1
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-openai>=0.1.0
+langgraph>=0.1.0
+openai>=1.30.0
+python-dotenv>=1.0.0
+httpx>=0.27.0
+pymysql>=1.1.0
+cryptography>=42.0.0

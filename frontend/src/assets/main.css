@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  background-color: #f8fafc;
+  color: #1f2937;
+}
+
+/* 通用滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* 侧边栏菜单:让 Element Plus 菜单适配深色渐变背景 */
+.sidebar-menu.el-menu {
+  border-right: none;
+  background: transparent;
+}
+.sidebar-menu .el-menu-item {
+  color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  margin: 4px 10px;
+}
+.sidebar-menu .el-menu-item:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+.sidebar-menu .el-menu-item.is-active {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 卡片圆角统一 */
+.el-card {
+  border-radius: 12px;
+}
+
+.scroll-area {
+  max-height: 420px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  line-height: 1.75;
+}
